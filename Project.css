@@ -1,0 +1,337 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: skyblue;
+  background: #fafafa;
+}
+.logo-icon {
+  width: 30px;   /* adjust size */
+  height: 30px;
+  vertical-align: middle;  /* align with text */
+  margin-right: 8px;       /* space between icon & text */
+}
+.logo-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.title{
+    color: #9ee1e9;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Texts */
+.hero-text {
+  text-align: justify;
+  margin-top: 5px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: rgb(203, 195, 195);
+  text-align: center;
+}
+
+.hero-heading {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+
+.site-logo {
+  width: 40%;
+  color: white;
+  margin-left: 3%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.site-navbar {
+  width: 60%;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  color: #00bcd4;
+  text-decoration: none;
+  margin: 5px;
+  font-size: 15px;
+}
+
+#nav-home a {
+  color: white;
+}
+
+.nav-item {
+  list-style: none;
+  display: flex;
+  flex: wrap;
+  
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  background-color: rgb(5, 63, 85);
+  padding-bottom: 20px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-textbox {
+  width: 50%;
+}
+
+.hero-buttons {
+  width: 50%;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.btn-primary,
+.btn-secondary {
+  border-radius: 20px;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+}
+.number{
+    color: white;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 4px;
+}
+
+/* 3 Images Row in Hero */
+.hero-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.hero-images img {
+  width: 25%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Features Section */
+.features-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Align image and items vertically */
+}
+
+.feature-image {
+  width: 40%;         /* Take 40% of the section */
+  height: auto;       /* Adjust height automatically */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center;     /* Center vertically if needed */
+}
+
+.feature-image img { 
+  width: 90%;
+  height: 90%;
+  border-radius: 25px;     /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the image fits inside container */
+}
+
+
+.feature-items {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-box {
+  width: 50%;
+  padding: 10px;
+  flex-direction: column;  /* stack circle, h1, p vertically */
+  align-items: center;     /* center horizontally */
+  text-align: center;
+}
+
+.feature-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-icon1,.feature-icon2,.feature-icon3,.feature-icon4 {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+  margin-left: 40%;
+}
+.feature-icon1{
+    background-color: #ff5722; 
+}
+.feature-icon2{
+    background-color: rgb(81, 81, 204); 
+}
+.feature-icon3{
+    background-color: #ff5722; 
+}
+.feature-icon4{
+    background-color: rgb(81, 81, 204); 
+}
+.item{
+    color:#272626
+}
+.item-content{
+    color:cadetblue
+}
+
+/* Intro Section */
+.intro-section {
+  display: flex;
+  flex-direction: row;
+  background-color: #272626;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px black;
+}
+
+.intro-text {
+  width: 45%;
+  color: white;
+  padding: 10px;
+  text-align: justify;
+}
+
+.btn-outline {
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  font-weight: bold;
+  background-color: #555;
+  color: white;
+  border: solid 1px white;
+  margin-top: 10px;
+}
+
+.progress-container {
+    margin-left: 20px;
+  width: 50%;
+  color: white;
+}
+
+.progress-container .progress-bar {
+  background: #555;
+  height: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.progress-container .progress-bar span {
+  display: block;
+  height: 100%;
+  background: white;
+  border-radius: 5px;
+}
+.progress-container-heading{
+    color: orangered;
+}
+/* Advertising Section */
+
+.advertising-heading{
+    color: rgb(242, 48, 10);
+    font-size: 50px;
+    stroke-width: 1px;
+    font-family:cursive;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 4px 4px 6px black;
+}
+.advertising-section {
+  padding: 20px;
+}
+
+.advertising-content {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.advertising-images {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+
+}
+
+.advertising-text {
+  width: 50%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.advertising-gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+}
+/* Top single image */
+.advertising-images img {
+  width: 410px;   /* fixed width */
+  height: 250px;  /* fixed height */
+  object-fit: cover;  /* crop/scale image to fill box */
+  margin-bottom: 10px;
+  width: 90%;
+  height: 90%;
+  border-radius: 25px;
+  object-fit: contain; 
+}
+
+/* Two images below */
+.advertising-gallery img {
+  /*  width: 210px;   fixed width */
+  /* height: 200px;   fixed height */
+  object-fit: cover;
+  width: 90%;
+  height: 90%;
+  border-radius: 80px;
+  object-fit: contain; 
+}
+
+.ad-image,
+.ad-image-alt {
+  width: 50%;
+  height: auto;
+}
